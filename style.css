@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_startsida {
-    background: url(img/saxar.framsida.png) center top;
+    background: url(images/saxar.framsida.png) center top;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;

@@ -120,14 +120,13 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_4 {
-    background: url(images/hairsalon.jpg) center top;
+    background: url(images/bilder_sussies_salongen.png) center top;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     top: -15px;
     z-index: 1;
     grid-column: 1 / -1;
-    /* border: solid 2px #D6BB9F; */
 }
 
 .rubrik_sida_4 {
@@ -139,18 +138,18 @@ nav ul li a:hover {
     padding-bottom: 10px;   
 }
 
-.text_sida_4 {
+/* .text_sida_4 {
     color: #f7f4f2;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    padding-bottom: 110px;
-}
+} */
 
 .bild_susanne {
     border-radius: 50%;
     width: 20%;
+    margin-left: 130px;
 }
 
 /* HÄR BÖRJAR DEL "OM SUSSIES" */

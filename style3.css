@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_3 {
-    background: url(img/klippning_1.png) center top;
+    background: url(images/bilder_sussies_klipp.png) center top;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -182,6 +182,7 @@ nav ul li a:hover {
     padding: 10px 30px 30px 45px;
     height: fit-content;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .rubrik_öppettider {
@@ -294,7 +295,7 @@ div .ghd_logga {
 .formulär {
     grid-column: 2 / 9;
     padding: 20px 60px 30px 20px;
-    background-image: url(img/saxar.framsida.png);
+    background-image: url(images/saxar.framsida.png);
 }
 
 .rubrik_formulär {

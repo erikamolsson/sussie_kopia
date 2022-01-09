@@ -148,6 +148,11 @@ nav ul li a:hover {
     padding-bottom: 110px;
 }
 
+.bild_susanne {
+    border-radius: 50%;
+    width: 20%;
+}
+
 /* HÄR BÖRJAR DEL "OM SUSSIES" */
 .om_sussies {
     grid-column: 2 / 9;

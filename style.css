@@ -148,6 +148,7 @@ nav ul li a:hover {
 .välkomst_text p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
+    font-size: 18px;
 }
 
 .öppningstider {
@@ -307,7 +308,7 @@ nav ul li a:hover {
 div iframe {
     width: 80%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .rubrik_karta {

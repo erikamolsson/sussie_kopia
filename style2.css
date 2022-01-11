@@ -19,6 +19,11 @@
     row-gap: 10px;
 }
 
+/* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
+@media screen and (max-width: 1010px) {
+
+}
+
 header {
     grid-column: 1 / -1;
     background-color: #D6BB9F;
@@ -157,7 +162,8 @@ nav ul li a:hover {
 .intro_behandlingar_text {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.2;
-    font-size: 19px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 /* HÄR BÖRJAR DEL OM BEHANDLINGAR/PRISER */
@@ -168,19 +174,22 @@ nav ul li a:hover {
 
 .rubrik_klipp {
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 27px;
 }
 
 .text_klipp1 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 19px;
-    line-height: 1.2;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .text_klipp2 {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.2;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
 }
 
 /* ÖPPETTIDER */
@@ -193,10 +202,13 @@ nav ul li a:hover {
 .sidebar_öppettider {
     /* grid-column: 9 / -2; */
     background-color: #58628A;
-    padding: 10px 30px 30px 45px;
+    padding: 0 10px 40px 10px;
     height: fit-content;
     margin-top: 20px;
     margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .rubrik_öppettider {
@@ -213,11 +225,12 @@ nav ul li a:hover {
 }
 
 .button_öppettider {
+    margin: 0 auto;
     margin-top: 20px;
     padding: 10px 30px;
     font-family: 'Playball', cursive;
     font-size: 20px;
-    width: 200px;
+    width: 75%;
     border: none;
     border-radius: 4px;
 }
@@ -228,6 +241,10 @@ nav ul li a:hover {
     background-color: #58628A;
     padding: 10px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
 }
 
 .rubrik_produkter {
@@ -238,47 +255,40 @@ nav ul li a:hover {
     padding-bottom: 30px;
 }
 
-div .lanza_logga {
-    margin-left: 35px
-}
 .lanza_logga {
-    width: 200px;
+    width: 80%;
+    margin: auto;
 }
 
-div .loreal_logga {
-    margin-left: 40px
-}
 .loreal_logga{
-    width: 200px;
+    width: 80%;
+    margin: auto;
 }
 
-div .obh_logga {
-    margin-left: 60px
-}
 .obh_logga{
-    width: 150px;
+    width: 80%;
+    margin: auto;
 }
 
-div .ghd_logga {
-    margin-left: 50px
-}
 .ghd_logga{
-    width: 170px;
+    width: 80%;
+    margin: auto;
 }
 
 /* AVSKILJARE - KAM */
 .bild_sax {
     grid-column: 2 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .bild_kam {
-    width: 290px;
-    padding-left: 100px;
+    width: 35%;
 }
 
 /* FÄRGNINGAR */
 .färgning {
-    /* border-top: solid 2px black; */
     margin-top: 20px;
     grid-column: 2 / 9;
     padding: 10px 60px 10px 20px;
@@ -286,25 +296,28 @@ div .ghd_logga {
 
 .rubrik_färgning {
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 27px;
 }
 
 .text_färg1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .rubrik_olaplex{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 27px;
 }
 
 .text_färg2 {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.2;
+    line-height: 1.5;
+    font-size: 19px;
+    text-align: justify;
 }
 
 /* HÄR BÖRJAR FOOTER */
@@ -320,11 +333,11 @@ footer {
 .box1 {
     grid-column: 2 / 5;
     margin-top: 10px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 
 .logga_footer {
-    width: 230px;
+    width: 80%;
     padding-right: 10px;
 }
 
@@ -332,7 +345,8 @@ footer {
 .box2{
     grid-column: 5 / 8;
     margin-top: 10px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    padding-left: 50px;
     padding-top: 10px;
 }
 
@@ -345,7 +359,7 @@ footer {
 .adress {
     font-family: 'Quicksand', sans-serif;
     color: #f7f4f2;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 /* Del om kontakt i footer */
@@ -365,7 +379,7 @@ footer {
 .kontakt {
     font-family: 'Quicksand', sans-serif;
     color: #f7f4f2;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 /* Del om sociala medier i footer */

@@ -19,16 +19,13 @@
     row-gap: 10px;
 }
 
-/* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
-@media screen and (max-width: 1010px) {
-
-}
-
 header {
     grid-column: 1 / -1;
     background-color: #D6BB9F;
     height: 130px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #top-of-header {
@@ -227,10 +224,11 @@ nav ul li a:hover {
 .button_öppettider {
     margin: 0 auto;
     margin-top: 20px;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     font-family: 'Playball', cursive;
     font-size: 20px;
     width: 75%;
+    height: 75%;
     border: none;
     border-radius: 4px;
 }
@@ -256,17 +254,17 @@ nav ul li a:hover {
 }
 
 .lanza_logga {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .loreal_logga{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .obh_logga{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -414,4 +412,93 @@ footer {
     color: #f7f4f2;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+}
+
+
+/* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
+@media screen and (max-width: 1010px) {
+    header {
+        height: 115px;
+    }
+
+    nav ul {
+        margin-right: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    nav ul li {
+        margin-right: 5px;
+    }
+
+    .sussie_logga {
+        margin-left: 40px;
+        top: -8px;
+    }
+
+    .rubrik_sida_2 {
+        font-size: 45px;
+        padding-top: 160px;
+    }
+
+    .intro_behandlingar_text,
+    .text_klipp1,
+    .text_färg1,
+    .text_färg2 {
+        font-size: 17px;
+    }
+
+    .adress,
+    .kontakt {
+        font-size: 16px;
+    }
+
+    .box3 {
+        margin-left: 20px;
+    }
+
+    .tabell_öppettider {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    #information-top-of-header ul li {
+        font-size: 13px;
+    } 
+    
+    nav ul {
+        margin-right: 20px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 3px;
+    }
+
+    .sussie_logga {
+        margin-left: 10px;
+        top: -6px;
+    }
+
+    .rubrik_sida_2 {
+        font-size: 35px;
+        padding-top: 110px;
+    }
+
+    .text_sida_2 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .sidebar_öppettider {
+        margin-bottom: 30px;
+    }
+
+    .adress,
+    .kontakt {
+        font-size: 14px;
+    }
 }

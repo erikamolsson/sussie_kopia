@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background: url(img/12_col.gif) center top repeat-y;
+body {
+    background: url(images/12_col.gif) center top repeat-y;
     background-size: 100%;
-} */
+}
 
 #main-content {
     display: grid;
@@ -150,6 +150,11 @@ nav ul li a:hover {
     padding-bottom: 60px;
 }
 
+/* DOLD SAX-IKON */
+.bild_sax_först {
+    display: none;
+}
+
 /* HÄR BÖRJAR DEL - INTRO */
 .intro_behandlingar_rubrik {
     font-family: 'Quicksand', sans-serif;
@@ -235,7 +240,7 @@ nav ul li a:hover {
 
 /* PRODUKTER */
 .sidebar_produkter {
-    grid-column: 9 / -2;
+    /* grid-column: 9 / -2; */
     background-color: #58628A;
     padding: 10px;
     height: fit-content;
@@ -339,6 +344,10 @@ footer {
     padding-right: 10px;
 }
 
+.box1_5 {
+    display: none;
+}
+
 /* Del om adress i footer */
 .box2{
     grid-column: 5 / 8;
@@ -390,15 +399,15 @@ footer {
 }
 
 .logga_mail_footer {
-    width: 50px;
+    width: 8%;
 }
 
 .logga_fb_footer {
-    width: 50px;
+    width: 8%;
 }
 
 .logga_insta_footer {
-    width: 50px;
+    width: 8%;
 }
 
 /* Del om upphovsrätt i footer */
@@ -463,24 +472,28 @@ footer {
 
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 800px) {
     #information-top-of-header ul li {
         font-size: 13px;
     } 
     
+    header {
+        height: 110px;
+    }
+
     nav ul {
         margin-right: 20px;
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: 13px;
     }
     nav ul li {
         margin-right: 3px;
     }
 
     .sussie_logga {
-        margin-left: 10px;
-        top: -6px;
+        margin-left: 16px;
+        top: -3px;
     }
 
     .rubrik_sida_2 {
@@ -493,6 +506,27 @@ footer {
         font-weight: normal;
     }
 
+    .klippning,
+    .färgning {
+        grid-column: 2 / 8;
+        padding-right: 30px;
+    }
+
+    .text_klipp1,
+    .text_färg1 {
+        text-align: left;
+    }
+
+    .text_klipp2,
+    .text_färg2 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .sidebar_big {
+        grid-column: 8 / -2;
+    }
+
     .sidebar_öppettider {
         margin-bottom: 30px;
     }
@@ -500,5 +534,95 @@ footer {
     .adress,
     .kontakt {
         font-size: 14px;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        grid-column: 2 / 7;
+    }
+
+    .box3 {
+        grid-column: 7 / -2;
+    }
+
+    .box1_5 {
+        grid-column: 2 / 7;
+        display: grid;
+    }
+    .logga_footer_liten_skärm {
+        width: 40%;
+        margin-left: 35px;
+    }
+
+    .box4 {
+        grid-column: 7 / -2;
+        padding: 2px;     
+        margin-top: 35px;  
+    }
+    .logga_mail_footer {
+        width: 12%;
+    }
+    .logga_fb_footer {
+        width: 12%;
+    }
+    .logga_insta_footer {
+        width: 12%;
+    }
+
+    .box5 {
+        margin-top: 20px;
+    } 
+    
+    .upphovsrätt {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #information-top-of-header ul {
+        display: none;
+    }
+
+    .klippning {
+        grid-column: 2 / -2;
+    }
+
+    .sidebar_big {
+        grid-column: 3 / -3;
+    }
+
+    .bild_sax_först {
+        display: grid;
+        grid-column: 3 / -3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .bild_kam_först {
+        width: 30%;
+    }
+
+    .bild_sax {
+        display: none;
+    }
+
+    .lanza_logga,
+    .loreal_logga,
+    .obh_logga {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .ghd_logga{
+        width: 60%;
+        margin: auto;
+    }
+
+    .färgning {
+        grid-column: 2 / -2;
     }
 }

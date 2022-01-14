@@ -16,7 +16,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     column-gap: 2.08%;
-    row-gap: 10px;
 }
 
 header {
@@ -76,6 +75,7 @@ div #information-top-of-header {
     margin-right: 30px;
 }
 
+/* START MENY & LOGGA */
 #meny nav {
     display: flex;
     justify-content: space-around;
@@ -227,8 +227,6 @@ nav ul li a:hover {
 /* ÖPPETTIDER */
 .sidebar_big {
     grid-column: 9 / -2;
-    display: flex;
-    flex-direction: column;
 }
 
 .sidebar_öppettider {
@@ -237,7 +235,7 @@ nav ul li a:hover {
     padding: 0 10px 40px 10px;
     height: fit-content;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -259,11 +257,10 @@ nav ul li a:hover {
 .button_öppettider {
     margin: 0 auto;
     margin-top: 20px;
-    /* padding: 10px 30px; */
+    padding: 7px 0;
     font-family: 'Playball', cursive;
     font-size: 20px;
     width: 75%;
-    height: 75%;
     border: none;
     border-radius: 4px;
 }
@@ -310,10 +307,11 @@ nav ul li a:hover {
 
 /* AVSKILJARE - KAM */
 .bild_sax {
-    grid-column: 2 / 9;
+    /* grid-column: 2 / 9; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 50px 0;
 }
 
 .bild_kam {
@@ -323,8 +321,7 @@ nav ul li a:hover {
 /* FÄRGNINGAR */
 .färgning {
     margin-top: 20px;
-    grid-column: 2 / 9;
-    padding: 10px 60px 10px 20px;
+    /* grid-column: 2 / 9; */
 }
 
 .rubrik_färgning {
@@ -429,15 +426,15 @@ footer {
 }
 
 .logga_mail_footer {
-    width: 8%;
+    width: 40px;
 }
 
 .logga_fb_footer {
-    width: 8%;
+    width: 40px;
 }
 
 .logga_insta_footer {
-    width: 8%;
+    width: 40px;
 }
 
 /* Del om upphovsrätt i footer */
@@ -593,13 +590,13 @@ footer {
         margin-top: 35px;  
     }
     .logga_mail_footer {
-        width: 12%;
+        width: 30px;
     }
     .logga_fb_footer {
-        width: 12%;
+        width: 30px;
     }
     .logga_insta_footer {
-        width: 12%;
+        width: 30px;
     }
 
     .box5 {
@@ -621,7 +618,7 @@ footer {
     }
 
     .sussie_logga {
-        width: 150px;
+        width: 170px;
         margin-left: 0px;
         margin-top: 60px;
     }
@@ -717,10 +714,14 @@ footer {
 
     .box2,
     .box3,
-    .box1_5,
-    .box4 {
+    .box1_5 {
         grid-column: 2 / -2;
         display: flex;
+    }
+
+    .box4 {
+        grid-column: 2 / -2;
+        border: #574C40 solid 2px;
     }
 
     .box2,
@@ -740,9 +741,4 @@ footer {
         margin: auto;
     }
 
-    .box4 {
-        margin: auto;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 }

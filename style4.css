@@ -170,12 +170,17 @@ nav ul li a:hover {
 }
 
 /* ÖPPETTIDER */
+.sidebar_big {
+    grid-column: 9 / -2;
+}
+
 .sidebar_öppettider {
     grid-column: 9 / -2;
     background-color: #58628A;
     padding: 10px 30px 30px 45px;
     height: fit-content;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .rubrik_öppettider {

@@ -200,6 +200,7 @@ nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .uppgifter {
@@ -330,8 +331,8 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR FORMULÄR */
 .formulär {
-    grid-column: 2 / 9;
-    /* padding: 20px 60px 30px 20px; */
+    /* grid-column: 2 / 9; */
+    padding: 20px 60px 30px 30px;
     background-image: url(images/saxar.framsida.png);
 }
 
@@ -360,12 +361,12 @@ nav ul li a:hover {
 }
 
 #message {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
 }
 
 input {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     padding: 5px;
 }
@@ -373,7 +374,7 @@ input {
 .skicka {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    width: 90%;
+    width: 100%;
     padding: 5px;
     background-color: #58628A;
     color: #f7f4f2;
@@ -561,11 +562,6 @@ footer {
         padding-right: 30px;
     }
 
-    .text_klipp1,
-    .text_färg1 {
-        text-align: left;
-    }
-
     .text_kontakta_oss,
     .text_bokning {
         font-size: 15px;
@@ -700,6 +696,20 @@ footer {
         grid-column: 2 / -2;
     }
 
+    .formulär {
+        padding: 15px;
+    }
+
+    .rubrik_formulär {
+        font-size: 20px;
+    }
+    
+    .fnamn,
+    .enamn,
+    .meddelande {
+        font-size: 15px;
+    }
+    
     .sidebar_big {
         grid-column: 3 / -3;
     }

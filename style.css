@@ -412,3 +412,293 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 1010px) {
+
+    nav ul {
+        margin-right: 30px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 5px;
+    }
+
+    .sussie_logga {
+        margin-left: 40px;
+        top: -8px;
+    }
+
+    .rubrik_sida_2 {
+        font-size: 45px;
+        padding-top: 160px;
+    }
+
+    .intro_behandlingar_text,
+    .text_klipp1,
+    .text_färg1,
+    .text_färg2 {
+        font-size: 17px;
+    }
+
+    .adress,
+    .kontakt {
+        font-size: 16px;
+    }
+
+    .box3 {
+        margin-left: 20px;
+    }
+
+    .tabell_öppettider {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 825px) {
+    #information-top-of-header ul li {
+        font-size: 12px;
+    } 
+
+    #meny nav {
+        height: 65px;
+    }
+
+    nav ul {
+        margin-right: 10px;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+    nav ul li {
+        margin-right: 3px;
+    }
+
+    .sussie_logga {
+        width: 170px;
+        margin-left: 16px;
+        top: -3px;
+    }
+
+    .rubrik_sida_2 {
+        font-size: 35px;
+        padding-top: 110px;
+    }
+
+    .text_sida_2 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .klippning,
+    .färgning {
+        grid-column: 2 / 8;
+        padding-right: 30px;
+    }
+
+    .text_klipp1,
+    .text_färg1 {
+        text-align: left;
+    }
+
+    .text_klipp2,
+    .text_färg2 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .sidebar_big {
+        grid-column: 8 / -2;
+    }
+
+    .sidebar_öppettider {
+        margin-bottom: 30px;
+    }
+
+    .adress,
+    .kontakt {
+        font-size: 14px;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        grid-column: 2 / 7;
+    }
+
+    .box3 {
+        grid-column: 7 / -2;
+    }
+
+    .box1_5 {
+        grid-column: 2 / 7;
+        display: grid;
+    }
+    .logga_footer_liten_skärm {
+        width: 40%;
+        margin-left: 35px;
+    }
+
+    .box4 {
+        grid-column: 7 / -2;
+        /* display: flex;
+        justify-content: end; */
+        padding: 2px 2px 2px 50px;     
+        margin-top: 35px;  
+    }
+    .logga_mail_footer {
+        width: 30px;
+    }
+    .logga_fb_footer {
+        width: 30px;
+    }
+    .logga_insta_footer {
+        width: 30px;
+    }
+
+    .box5 {
+        margin-top: 20px;
+    } 
+    
+    .upphovsrätt {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #information-top-of-header ul {
+        display: none;
+    }
+
+    .sussie_logga {
+        width: 170px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+    #meny nav {
+        height: 55px;
+    }
+
+    /* Burger meny */
+    #meny nav ul {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 12vh;
+        background-color: #D6BB9F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    #meny nav ul li {
+        border: none;
+        opacity: 0;
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .bild_sida_2 {
+        background-size: 140%;
+    }
+
+    .rubrik_sida_2 {
+        font-size: 35px;
+        padding-top: 90px;
+    }
+
+    .text_sida_2 {
+        display: none;
+    }
+
+    .text_sida_2_mobil {
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        display: block;
+    }
+
+    .klippning {
+        grid-column: 2 / -2;
+    }
+
+    .sidebar_big {
+        grid-column: 3 / -3;
+    }
+
+    .bild_sax_först {
+        display: grid;
+        grid-column: 3 / -3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .bild_kam_först {
+        width: 30%;
+    }
+
+    .bild_sax {
+        display: none;
+    }
+
+    .lanza_logga,
+    .loreal_logga,
+    .obh_logga {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .ghd_logga{
+        width: 60%;
+        margin: auto;
+    }
+
+    .färgning {
+        grid-column: 2 / -2;
+    }
+
+    .box2,
+    .box3,
+    .box1_5 {
+        grid-column: 2 / -2;
+        display: flex;
+    }
+
+    .box4 {
+        grid-column: 2 / -2;
+        border: #574C40 solid 2px;
+    }
+
+    .box2,
+    .box3 {
+        text-align: left;
+        margin: 0;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .adress,
+    .kontakt {
+        font-size: 21px;
+    }
+
+    .box1_5 {
+        margin: auto;
+    }
+
+}

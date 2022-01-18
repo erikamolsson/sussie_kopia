@@ -425,6 +425,14 @@ footer {
     width: 40px;
 }
 
+/* Del som visar datum och tid -  footer */
+.time {
+    grid-column: 1 / -1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 /* Del om upphovsrätt i footer */
 .box5 {
     grid-column: 1 / -1;

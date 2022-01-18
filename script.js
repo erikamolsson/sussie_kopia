@@ -1,3 +1,4 @@
+// FOTOGALLERI
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +27,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+// HÄMTA DATUM OCH TID
+const d = new Date();
+document.getElementById("time_date").innerHTML = d;

@@ -378,7 +378,6 @@ footer {
 .box2{
     grid-column: 5 / 8;
     margin-top: 10px;
-    /* margin-left: 120px; */
     padding-left: 50px;
     padding-top: 10px;
 }
@@ -685,11 +684,9 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        margin: auto;
     }
 
     .logga_footer_liten_skärm {
-        align-items: center;
         margin: auto;
     }
 
@@ -697,8 +694,17 @@ footer {
     .box3,
     .box4,
     .box1_5 {
-        border: black solid 2px;
         margin: auto;
+    }
+
+    .box2 {
+        margin: auto;
+        padding: 0 70px 0 0;
+    }
+
+    .box3 {
+        margin: auto;
+        padding: 0;
     }
 
     .box4 {
@@ -711,4 +717,9 @@ footer {
         font-size: 21px;
     }
 
+    .logga_fb_footer,
+    .logga_insta_footer,
+    .logga_mail_footer {
+        width: 50px;
+    }
 }

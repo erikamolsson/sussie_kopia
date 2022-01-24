@@ -454,7 +454,6 @@ footer {
 
 /* Del som visar datum och tid -  footer */
 .time {
-    grid-column: 1 / -1;
     font-family: 'Quicksand', sans-serif;
     color: #f2f2f2;
 }

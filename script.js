@@ -1,12 +1,14 @@
 // BURGER-MENU
 const navSlide = () => {
     const burger = document.querySelector('.burger_menu');
-    const nav = document.querySelector('#meny nav ul');
+    const nav = document.querySelector('nav-links');
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('.nav-active');
+        nav.classList.toggle('nav-active');
     });
 }
+
+navSlide();
 
 
 // FOTOGALLERI

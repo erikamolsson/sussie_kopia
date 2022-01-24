@@ -660,6 +660,10 @@ footer {
         padding: 30px 30px;
     }
 
+    .ikoner_tjänster {
+        width: 90%;
+    }
+
     .tjänster,
     .karta {
         grid-column: 2 / -2;
@@ -678,33 +682,33 @@ footer {
         display: none;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .logga_footer_liten_skärm {
+        align-items: center;
+        margin: auto;
+    }
+
     .box2,
     .box3,
+    .box4,
     .box1_5 {
-        grid-column: 2 / -2;
-        display: flex;
+        border: black solid 2px;
+        margin: auto;
     }
 
     .box4 {
-        grid-column: 2 / -2;
-        border: #574C40 solid 2px;
+        padding-right: 50px;
     }
 
-    .box2,
-    .box3 {
-        text-align: left;
-        margin: 0;
-        flex-direction: column;
-        padding: 0 20px;
-    }
 
     .adress,
     .kontakt {
         font-size: 21px;
-    }
-
-    .box1_5 {
-        margin: auto;
     }
 
 }

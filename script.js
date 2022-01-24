@@ -1,3 +1,13 @@
+// BURGER-MENU
+const navSlide = () => {
+    const burger = document.querySelector('.burger_menu');
+    const nav = document.querySelector('#meny nav ul');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('.nav-active');
+    });
+}
+
 // FOTOGALLERI
 let slideIndex = 1;
 showSlides(slideIndex);

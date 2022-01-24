@@ -132,6 +132,7 @@ nav ul li a:hover {
 /* BURGER MENY */
 .burger_menu {
     display: none;
+    cursor: pointer;
 }
 
 .burger_menu div {
@@ -605,6 +606,7 @@ footer {
         align-items: center;
         width: 50%;
         transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
 
     #meny nav ul li {
@@ -614,6 +616,10 @@ footer {
 
     .burger_menu {
         display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
     }
 
     .bild_startsida {

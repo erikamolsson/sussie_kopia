@@ -98,10 +98,6 @@ div #information-top-of-header {
 nav ul {
     list-style-type: none;
     display: flex;
-    /* margin-right: 70px; */
-    /* align-items: center;
-    justify-content: flex-end; */
-    /* float: right; */
 }
 
 nav ul li {
@@ -230,94 +226,108 @@ nav ul li a:hover {
 }
 
 /* Här börgar slideshow - med foton */
-.slideshow_container {
-    max-width: 90%;
+.slideshow-container {
+	width: 60%;
     position: relative;
     margin: auto;
-    padding-bottom: 50px;
 }
-.slideshow_bild {
-    display: none;
-}
-
-.slideshow_container img {
-    vertical-align: middle;
+/* Döljer bilder vid start av bildspelet */
+.mySlides {
+	display: none;
 }
 
-.bild_1,
-.bild_2,
-.bild_3,
-.bild_4,
-.bild_5,
-.bild_6 {
-    width: 33%;
-    margin: auto;
+/* Bildnummer text (1/3 etc) */
+.nummertext {
+	padding: 5px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	text-align: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
 }
 
-/* Knappar foto-galleri */
-.previos,
+/* Bildtext (Caption text) */
+.bildtext {
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	bottom: 5px;
+	background: rgba(0,0,0,0.5);
+	text-align: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+}
+
+/* Knappar föregående och nästa */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: rgba(255,255,255,1);
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Positionering av "Nästa-knapp" till höger */
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    transition: 0.6s ease;
-    font-size: bold;
-    font-weight: bold;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
-/* Lägger "nästa-knappen" till höger */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+/* Hover-läge för knapparna */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
 }
 
-.previos:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Nummer-text (1 / 6) */
-.number_text {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Punkter längst ned, foto-galleri */
+/* Punkter/kontroller under bilderna */
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    text-align: center;
-}
-.active, .dot:hover{
-    background-color: #717171;
-}
-.dots_align {
-    text-align: center;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 
+/* Hover-läge för punkterna */
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+ from {
+    opacity: .4
+    }
+ to {
+    opacity: 1
 }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
 }
+@keyframes fade {
+ from {
+    opacity: .4
+    }
+ to {
+    opacity: 1
+    }
+}
+
+
 
 /* HÄR BÖRJAR KARTA */
 .karta {
@@ -426,25 +436,27 @@ footer {
     width: 40px;
 }
 
-/* Del som visar datum och tid -  footer */
-.time {
-    grid-column: 1 / -1;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-}
-
 /* Del om upphovsrätt i footer */
 .box5 {
     grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: #574C40;
     margin-top: 25px;
+    column-gap: 10px;
 }
 
 .upphovsrätt {
     color: #f7f4f2;
     font-family: 'Quicksand', sans-serif;
-    text-align: center;
+}
+
+/* Del som visar datum och tid -  footer */
+.time {
+    grid-column: 1 / -1;
+    font-family: 'Quicksand', sans-serif;
+    color: #f2f2f2;
 }
 
 @media screen and (max-width: 1010px) {
@@ -523,6 +535,10 @@ footer {
         padding-right: 30px;
     } */
 
+    .bildtext {
+        font-size: 13px;
+    }
+
     .adress,
     .kontakt {
         font-size: 14px;
@@ -570,7 +586,8 @@ footer {
         margin-top: 20px;
     } 
     
-    .upphovsrätt {
+    .upphovsrätt,
+    .time {
         font-size: 12px;
     }
 }
@@ -651,6 +668,15 @@ footer {
 
     .foto_galleri {
         grid-column: 2 / -2;
+
+    }
+
+    .rubrik_galleri {
+        padding-bottom: 15px;
+    }
+
+    .bildtext {
+        display: none;
     }
 
     .box2,

@@ -8,24 +8,27 @@ const navSlide = () => {
     });
 }
 
+
 // FOTOGALLERI
-let slideIndex = 1;
+var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
-// Next/previous - knappar
 function plusSlides(n) {
+    clearTimeout(timer);
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
+    clearTimeout(timer);
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slideshow_bild");
-    let dots = document.getElementsByClassName("dot");
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n == undefined) { n = ++slideIndex }
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -36,8 +39,12 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+    timer = setTimeout(showSlides, 4000);
 }
 
 // HÄMTA DATUM OCH TID
-const d = new Date();
+/* const d = new Date();
+document.getElementById("time_date").innerHTML = d; */
+
+const d = new Date().toISOString().slice(0, 10);
 document.getElementById("time_date").innerHTML = d;

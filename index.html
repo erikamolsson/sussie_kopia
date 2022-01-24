@@ -116,48 +116,78 @@
         <div class="foto_galleri">
             <h2 class="rubrik_galleri">Galleri</h2>
             <!-- Slideshow div - börjar här -->
-            <div class="slideshow_container">
-                <div class="slideshow_bild fade">
-                    <div class="number_text">1 / 3</div>
-                    <img src="images/bilder_sussies_hair.png" class="bild_1"><img src="images/bilder_sussies_hair2.png"
-                        class="bild_2"><img src="images/bilder_sussies_klipp.png" class="bild_3">
+            <!-- SLIDESHOW START ############################################################ -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- BILD 1 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">1 / 7</div>
+                    <img src="images/bilder_sussies_2_salongen.png" style="width:100%">
+                    <div class="bildtext"><strong>EXEMPEL 1</strong><br>
+                        Vy över Gävle Strand med Fullriggaren som innehåller bostäder, restaurang, vårdcentral, snabbköp
+                        mm. Området utvecklas kontinuerligt och ger en närkontakt med havet. Områdets namn var tidigare
+                        Alderholmen. </div></strong>
                 </div>
-                <div class="slideshow_bild fade">
-                    <div class="number_text">2 / 3</div>
-                    <img src="images/bilder_sussies_saxarna.png" class="bild_1"><img
-                        src="images/bilder_sussies_2_salongen.png" class="bild_2"><img
-                        src="images/bilder_sussies_redskapen.png" class="bild_3">
+                <!-- BILD 2 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">2 / 7</div>
+                    <img src="images/bilder_sussies_klipp.png" style="width:100%">
+                    <div class="bildtext">Sussies Huvudkontor</div>
                 </div>
-                <div class="slideshow_bild fade">
-                    <div class="number_text">3 / 3</div>
-                    <img src="images/bilder_sussies_hair.png" class="bild_1"><img src="images/bilder_sussies_hair2.png"
-                        class="bild_2"><img src="images//bilder_sussies_klipp.png" class="bild_3">
+                <!-- BILD 3 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">3 / 7</div>
+                    <img src="images/bilder_sussies_redskapen.png" style="width:100%">
+                    <div class="bildtext">Bra & moderna redskap</div>
+                </div>
+                <!-- BILD 4 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">4 / 7</div>
+                    <img src="images/bilder_sussies_saxarna.png" style="width:100%">
+                    <div class="bildtext">I saxarnas värld</div>
+                </div>
+                <!-- BILD 5 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">5 / 7</div>
+                    <img src="images/bilder_sussies_hair2.png" style="width:100%">
+                    <div class="bildtext">Limeträd i Karpathos, Grekland</div>
+                </div>
+                <!-- BILD 6 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">6 / 7</div>
+                    <img src="images/bilder_sussies_klipp.png" style="width:100%">
+                    <div class="bildtext">Fiskenät i Karpathos, Grekland</div>
+                </div>
+                <!-- BILD 7 ################################################ -->
+                <div class="mySlides fade">
+                    <div class="nummertext">7 / 7</div>
+                    <img src="images/bilder_sussies_redskapen.png" style="width:100%">
+                    <div class="bildtext"></div>
                 </div>
 
-                <!-- <div class="slideshow_bild fade">
-                    <div class="number_text">4 / 6</div>
-                    <img src="img/hair.jpg" class="bild_4">
-                </div>
-                <div class="slideshow_bild fade">
-                    <div class="number_text">5 / 6</div>
-                    <img src="img/hair2.jpg" class="bild_5">
-                </div>
-                <div class="slideshow_bild fade">
-                    <div class="number_text">6 / 6</div>
-                    <img src="img/klippning.jpg" class="bild_6">
-                </div> -->
 
-                <!-- Nästa / föregående foto-knappar -->
-                <a class="previos" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- Bilder "Föregående och Nästa" ################################################ -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next"
+                    onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+
+            <!-- Klickbara CIRKLAR. OBS! Lägg till eller ta bort så att antalet cirklar stämmer med bilderna -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+
         </div>
-        <!-- Punkter under fotona -->
-        <div style="text-align:center" class="dots_align">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+
+
+
 
         <div class="karta">
             <h2 class="rubrik_karta">Hitta hit</h2>
@@ -193,11 +223,9 @@
                     <img src="logos/fb_logo.png" class="logga_fb_footer"></a>
                 <img src="logos/insta_logo.png" class="logga_insta_footer">
             </div>
-            <div class="time">
-                <p id="time_date"></p>
-            </div>
             <div class="box5">
                 <p class="upphovsrätt">Upphovsrätt © 2022 Erikamariaolsson</p>
+                <p id="time_date" class="time"></p>
             </div>
         </footer>
     </main>

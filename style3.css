@@ -484,6 +484,13 @@ footer {
     text-align: center;
 }
 
+/* Del som visar datum och tid -  footer */
+.time {
+    grid-column: 1 / -1;
+    font-family: 'Quicksand', sans-serif;
+    color: #f2f2f2;
+}
+
 /* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
 @media screen and (max-width: 1010px) {
 
@@ -623,7 +630,8 @@ footer {
         margin-top: 20px;
     } 
     
-    .upphovsrätt {
+    .upphovsrätt,
+    .time {
         font-size: 12px;
     }
 }

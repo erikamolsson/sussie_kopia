@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* body {
@@ -8,718 +8,742 @@
 } */
 
 #main-content {
-    display: grid;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 2.08%;
-    row-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: 2.08%;
+  row-gap: 10px;
 }
 
 header {
-    grid-column: 1 / -1;
-    /* background-color: #D6BB9F; */
-    /* height: 130px; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 3;
+  grid-column: 1 / -1;
+  /* background-color: #D6BB9F; */
+  /* height: 130px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
 }
 
 #top-of-header {
-    background-color: #574C40;
-    display: flex;
-    justify-content: space-between;
+  background-color: #574c40;
+  display: flex;
+  justify-content: space-between;
 }
 
 #some-top-of-header {
-    display: flex;
-    padding: 5px;
-    padding-left: 30px;
+  display: flex;
+  padding: 5px;
+  padding-left: 30px;
 }
 
-.top_logga_facebook{
-    width: 30px;
+.top_logga_facebook {
+  width: 30px;
 }
 
 .top_logga_instagram {
-    width: 30px;
-    margin-left: 10px;
+  width: 30px;
+  margin-left: 10px;
 }
 
 /* Text-inställningar på toppen av sidan, nedan */
 div #information-top-of-header {
-    display: flex;
-    margin-right: 30px;
-    justify-content: flex-end;
+  display: flex;
+  margin-right: 30px;
+  justify-content: flex-end;
 }
 
 #information-top-of-header ul {
-    list-style-type: none;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #information-top-of-header li {
-    flex-direction: row;
-    padding: 4px 10px;
-    color: #FFFFFF; 
-    font-family: 'Quicksand', sans-serif;
+  flex-direction: row;
+  padding: 4px 10px;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
 }
 
 #information-top-of-header ul li:last-child {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 /* START MENY & LOGGA */
 #meny nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #D6BB9F;
-    height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d6bb9f;
+  height: 90px;
 }
 
 .sussie_logga {
-    width: 250px;
-    padding: 0;
-    margin-left: 80px;
-    margin-top: 80px;
-    /* position: relative;
+  width: 250px;
+  padding: 0;
+  margin-left: 80px;
+  margin-top: 80px;
+  /* position: relative;
     top: 5px; */
-    z-index: 2;
+  z-index: 2;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 nav ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
-    border-right: #574C40 solid 1px;
-    padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  border-right: #574c40 solid 1px;
+  padding-right: 16px;
 }
 
 nav ul li:last-child {
-    border-right: none;
-    padding-right: 0;
+  border-right: none;
+  padding-right: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
 }
 
 nav ul li a:hover {
-    border-bottom: solid 3px #FFFFFF;
+  border-bottom: solid 3px #ffffff;
 }
 
-/* BURGER MENY */
-.burger_menu {
-    display: none;
-    cursor: pointer;
+/* BURGER MENY START*/
+#mySidepanel {
+  display: none;
 }
-
-.burger_menu div {
-    width: 25px;
-    height: 5px;
-    margin: 5px;
-    background-color: #574C40;
+.openbtn {
+  display: none;
 }
+/* BURGER MENY END s*/
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_startsida {
-    background: url(images/saxar.framsida.png) center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    top: -15px;
-    z-index: 1;
-    grid-column: 1 / -1;
+  background: url(images/saxar.framsida.png) center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -15px;
+  z-index: 1;
+  grid-column: 1 / -1;
 }
 
 .rubrik_startsida {
-    font-size: 65px;
-    font-family: 'Playball', cursive;
-    color: #f7f4f2;
-    text-align: center;
-    padding-top: 240px;
-    padding-bottom: 100px;
+  font-size: 65px;
+  font-family: "Playball", cursive;
+  color: #f7f4f2;
+  text-align: center;
+  padding-top: 240px;
+  padding-bottom: 100px;
 }
 
 /* HÄR BÖRJAR VÄLKOMSTDELEN */
 .välkomst_text {
-    grid-column: 2 / 7;
-    padding: 50px 30px 50px 70px;
+  grid-column: 2 / 7;
+  padding: 50px 30px 50px 70px;
 }
 
 .välkomst_text p {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3;
-    font-size: 18px;
-    text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .öppningstider {
-    grid-column: 7 / -2;
-    padding: 40px 50px;
-    border-left: solid 2px black;
+  grid-column: 7 / -2;
+  padding: 40px 50px;
+  border-left: solid 2px black;
 }
 
 .öppningstider table {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
 .öppningstider h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
 }
 
 /* HÄR BÖRJAR DEL OM TJÄNSTER */
 .tjänster {
-    grid-column: 2 / -2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    padding-bottom: 30px;
+  grid-column: 2 / -2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-bottom: 30px;
 }
 
 .rubrik_tjänster {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 35px;
 }
 
 .ikoner_tjänster {
-    width: 80%;
-    margin: auto;
-    border: #58628A solid 3px;
+  width: 80%;
+  margin: auto;
+  border: #58628a solid 3px;
 }
 
 /* HÄR BÖRJAR GALLERI */
 .foto_galleri {
-    grid-column: 1 / -1;
-    background-color: #58628A;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+  grid-column: 1 / -1;
+  background-color: #58628a;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .rubrik_galleri {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 35px;
-    color: #f7f4f2;
-    padding-bottom: 35px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: #f7f4f2;
+  padding-bottom: 35px;
 }
 
 /* Här börgar slideshow - med foton */
 .slideshow-container {
-	width: 60%;
-    position: relative;
-    margin: auto;
+  width: 60%;
+  position: relative;
+  margin: auto;
 }
 /* Döljer bilder vid start av bildspelet */
 .mySlides {
-	display: none;
+  display: none;
 }
 
 /* Bildnummer text (1/3 etc) */
 .nummertext {
-	padding: 5px;
-	position: absolute;
-	background: rgba(0,0,0,0.5);
-	text-align: left;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
-	font-size: 18px;
-	color: rgba(255,255,255,1);
+  padding: 5px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Bildtext (Caption text) */
 .bildtext {
-	padding: 5px 10px 5px 10px;
-	position: absolute;
-	bottom: 5px;
-	background: rgba(0,0,0,0.5);
-	text-align: left;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
-	font-size: 18px;
-	color: rgba(255,255,255,1);
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Knappar föregående och nästa */
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: rgba(255,255,255,1);
-	font-weight: bold;
-	font-size: 25px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
 /* Positionering av "Nästa-knapp" till höger */
 .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* Hover-läge för knapparna */
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Punkter/kontroller under bilderna */
 .dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 /* Hover-läge för punkterna */
-.active, .dot:hover {
-	background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
- from {
-    opacity: .4
-    }
- to {
-    opacity: 1
-}
-
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fade {
- from {
-    opacity: .4
-    }
- to {
-    opacity: 1
-    }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-
 
 /* HÄR BÖRJAR KARTA */
 .karta {
-    grid-column: 2 / -2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+  grid-column: 2 / -2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 div iframe {
-    width: 85%;
-    margin: auto;
-    padding-bottom: 50px;
+  width: 85%;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
 .rubrik_karta {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 35px;
 }
 
 /* HÄR BÖRJAR FOOTER */
 footer {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 2.08%;
-    background-color: #D6BB9F;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: 2.08%;
+  background-color: #d6bb9f;
 }
 
 .box1 {
-    grid-column: 2 / 5;
-    margin-top: 10px;
-    /* margin-left: 60px; */
+  grid-column: 2 / 5;
+  margin-top: 10px;
+  /* margin-left: 60px; */
 }
 
 .logga_footer {
-    width: 230px;
-    padding-right: 10px;
+  width: 230px;
+  padding-right: 10px;
 }
 
 .box1_5 {
-    display: none;
+  display: none;
 }
 
 /* Del om adress i footer */
-.box2{
-    grid-column: 5 / 8;
-    margin-top: 10px;
-    padding-left: 50px;
-    padding-top: 10px;
+.box2 {
+  grid-column: 5 / 8;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 
 .box2 h3 {
-    font-family: 'Quicksand', sans-serif;
-    color: #f7f4f2;
-    font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  color: #f7f4f2;
+  font-size: 25px;
 }
 
 .adress {
-    font-family: 'Quicksand', sans-serif;
-    color: #f7f4f2;
-    font-size: 19px;
+  font-family: "Quicksand", sans-serif;
+  color: #f7f4f2;
+  font-size: 19px;
 }
 
 /* Del om kontakt i footer */
 .box3 {
-    grid-column: 8 / -2;
-    margin-top: 10px;
-    padding: 10px;
-    margin-left: 60px;
+  grid-column: 8 / -2;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 60px;
 }
 
 .box3 h3 {
-    font-family: 'Quicksand', sans-serif;
-    color: #f7f4f2;
-    font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  color: #f7f4f2;
+  font-size: 25px;
 }
 
 .kontakt {
-    font-family: 'Quicksand', sans-serif;
-    color: #f7f4f2;
-    font-size: 19px;
+  font-family: "Quicksand", sans-serif;
+  color: #f7f4f2;
+  font-size: 19px;
 }
 
 /* Del om sociala medier i footer */
 .box4 {
-    grid-column: 4 / 10;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
+  grid-column: 4 / 10;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .logga_mail_footer {
-    width: 40px;
+  width: 40px;
 }
 
 .logga_fb_footer {
-    width: 40px;
+  width: 40px;
 }
 
 .logga_insta_footer {
-    width: 40px;
+  width: 40px;
 }
 
 /* Del om upphovsrätt i footer */
 .box5 {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #574C40;
-    margin-top: 25px;
-    column-gap: 10px;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #574c40;
+  margin-top: 25px;
+  column-gap: 10px;
 }
 
 .upphovsrätt {
-    color: #f7f4f2;
-    font-family: 'Quicksand', sans-serif;
+  color: #f7f4f2;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Del som visar datum och tid -  footer */
 .time {
-    font-family: 'Quicksand', sans-serif;
-    color: #f2f2f2;
+  font-family: "Quicksand", sans-serif;
+  color: #f2f2f2;
 }
 
 @media screen and (max-width: 1010px) {
+  nav ul {
+    margin-right: 30px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  nav ul li {
+    margin-right: 5px;
+  }
 
-    nav ul {
-        margin-right: 30px;
-    }
-    nav ul li a {
-        font-size: 14px;
-    }
-    nav ul li {
-        margin-right: 5px;
-    }
+  .sussie_logga {
+    margin-left: 40px;
+    top: -8px;
+  }
 
-    .sussie_logga {
-        margin-left: 40px;
-        top: -8px;
-    }
+  .rubrik_startsida {
+    font-size: 50px;
+    padding-top: 160px;
+  }
 
-    .rubrik_startsida {
-        font-size: 50px;
-        padding-top: 160px;
-    }
+  .välkomst_text {
+    font-size: 17px;
+  }
 
-    .välkomst_text {
-        font-size: 17px;
-    }
+  .adress,
+  .kontakt {
+    font-size: 16px;
+  }
 
-    .adress,
-    .kontakt {
-        font-size: 16px;
-    }
-
-    .box3 {
-        margin-left: 20px;
-    }
+  .box3 {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 825px) {
-    #information-top-of-header ul li {
-        font-size: 12px;
-    } 
+  #information-top-of-header ul li {
+    font-size: 12px;
+  }
 
-    #meny nav {
-        height: 65px;
-    }
+  #meny nav {
+    height: 65px;
+  }
 
-    nav ul {
-        margin-right: 10px;
-    }
-    nav ul li a {
-        font-size: 13px;
-    }
-    nav ul li {
-        margin-right: 3px;
-    }
+  nav ul {
+    margin-right: 10px;
+  }
+  nav ul li a {
+    font-size: 13px;
+  }
+  nav ul li {
+    margin-right: 3px;
+  }
 
-    .sussie_logga {
-        width: 170px;
-        margin-left: 16px;
-        top: -3px;
-    }
+  .sussie_logga {
+    width: 170px;
+    margin-left: 16px;
+    top: -3px;
+  }
 
-    .rubrik_startsida {
-        font-size: 35px;
-        padding-top: 110px;
-    }
+  .rubrik_startsida {
+    font-size: 35px;
+    padding-top: 110px;
+  }
 
-    .välkomst_text {
-        font-size: 15px;
-    }
+  .välkomst_text {
+    font-size: 15px;
+  }
 
-    /* .klippning,
+  /* .klippning,
     .färgning {
         grid-column: 2 / 8;
         padding-right: 30px;
     } */
 
-    .bildtext {
-        font-size: 13px;
-    }
+  .bildtext {
+    font-size: 13px;
+  }
 
-    .adress,
-    .kontakt {
-        font-size: 14px;
-    }
+  .adress,
+  .kontakt {
+    font-size: 14px;
+  }
 
-    .box1 {
-        display: none;
-    }
+  .box1 {
+    display: none;
+  }
 
-    .box2 {
-        grid-column: 2 / 7;
-    }
+  .box2 {
+    grid-column: 2 / 7;
+  }
 
-    .box3 {
-        grid-column: 7 / -2;
-    }
+  .box3 {
+    grid-column: 7 / -2;
+  }
 
-    .box1_5 {
-        grid-column: 2 / 7;
-        display: grid;
-    }
-    .logga_footer_liten_skärm {
-        width: 40%;
-        margin-left: 35px;
-    }
+  .box1_5 {
+    grid-column: 2 / 7;
+    display: grid;
+  }
+  .logga_footer_liten_skärm {
+    width: 40%;
+    margin-left: 35px;
+  }
 
-    .box4 {
-        grid-column: 7 / -2;
-        /* display: flex;
+  .box4 {
+    grid-column: 7 / -2;
+    /* display: flex;
         justify-content: end; */
-        padding: 2px 2px 2px 50px;     
-        margin-top: 35px;  
-    }
-    .logga_mail_footer {
-        width: 30px;
-    }
-    .logga_fb_footer {
-        width: 30px;
-    }
-    .logga_insta_footer {
-        width: 30px;
-    }
+    padding: 2px 2px 2px 50px;
+    margin-top: 35px;
+  }
+  .logga_mail_footer {
+    width: 30px;
+  }
+  .logga_fb_footer {
+    width: 30px;
+  }
+  .logga_insta_footer {
+    width: 30px;
+  }
 
-    .box5 {
-        margin-top: 20px;
-    } 
-    
-    .upphovsrätt,
-    .time {
-        font-size: 12px;
-    }
+  .box5 {
+    margin-top: 20px;
+  }
+
+  .upphovsrätt,
+  .time {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 660px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    #information-top-of-header ul {
-        display: none;
-    }
+  #information-top-of-header ul {
+    display: none;
+  }
 
-    .sussie_logga {
-        width: 170px;
-        margin-left: 0px;
-        margin-top: 60px;
-    }
+  .sussie_logga {
+    width: 170px;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
 
-    #meny nav {
-        height: 55px;
-    }
+  #meny nav {
+    height: 55px;
+  }
 
-    /* Burger meny */
-    #meny nav ul {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 12vh;
-        background-color: #D6BB9F;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
+  /* Burger meny start */
+  .nav-top {
+    display: none;
+  }
 
-    #meny nav ul li {
-        border: none;
-        opacity: 0;
-    }
+  #mySidepanel {
+    display: block;
+  }
 
-    .burger_menu {
-        display: block;
-    }
+  .sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color: #58628a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
 
-    .nav-active {
-        transform: translateX(0%);
-    }
+  .sidepanel a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
 
-    .bild_startsida {
-        background-size: 140%;
-    }
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
 
-    .rubrik_startsida {
-        font-size: 35px;
-        padding-top: 90px;
-    }
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+  }
 
-    .välkomst_text {
-        grid-column: 2 / -2;
-        padding: 30px 10px;
-    }
+  .openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #58628a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+  }
 
-    .öppningstider {
-        grid-column: 3 / -3;
-        border-left: none;
-        border-top: black solid 2px;
-        padding: 0;
-        padding: 30px 30px;
-    }
+  .openbtn:hover {
+    background-color: #444;
+  }
 
-    .ikoner_tjänster {
-        width: 90%;
-    }
+  /* Burger meny end */
 
-    .tjänster,
-    .karta {
-        grid-column: 2 / -2;
-    }
+  .bild_startsida {
+    background-size: 140%;
+  }
 
-    .foto_galleri {
-        grid-column: 2 / -2;
+  .rubrik_startsida {
+    font-size: 35px;
+    padding-top: 90px;
+  }
 
-    }
+  .välkomst_text {
+    grid-column: 2 / -2;
+    padding: 30px 10px;
+  }
 
-    .rubrik_galleri {
-        padding-bottom: 15px;
-    }
+  .öppningstider {
+    grid-column: 3 / -3;
+    border-left: none;
+    border-top: black solid 2px;
+    padding: 0;
+    padding: 30px 30px;
+  }
 
-    .bildtext {
-        display: none;
-    }
+  .ikoner_tjänster {
+    width: 90%;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
+  .tjänster,
+  .karta {
+    grid-column: 2 / -2;
+  }
 
-    .logga_footer_liten_skärm {
-        margin: auto;
-    }
+  .foto_galleri {
+    grid-column: 2 / -2;
+  }
 
-    .box2,
-    .box3,
-    .box4,
-    .box1_5 {
-        margin: auto;
-    }
+  .rubrik_galleri {
+    padding-bottom: 15px;
+  }
 
-    .box2 {
-        margin: auto;
-        padding: 0 70px 0 0;
-    }
+  .bildtext {
+    display: none;
+  }
 
-    .box3 {
-        margin: auto;
-        padding: 0;
-    }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .box4 {
-        padding-right: 50px;
-    }
+  .logga_footer_liten_skärm {
+    margin: auto;
+  }
 
+  .box2,
+  .box3,
+  .box4,
+  .box1_5 {
+    margin: auto;
+  }
 
-    .adress,
-    .kontakt {
-        font-size: 21px;
-    }
+  .box2 {
+    margin: auto;
+    padding: 0 70px 0 0;
+  }
 
-    .logga_fb_footer,
-    .logga_insta_footer,
-    .logga_mail_footer {
-        width: 50px;
-    }
+  .box3 {
+    margin: auto;
+    padding: 0;
+  }
+
+  .box4 {
+    padding-right: 50px;
+  }
+
+  .adress,
+  .kontakt {
+    font-size: 21px;
+  }
+
+  .logga_fb_footer,
+  .logga_insta_footer,
+  .logga_mail_footer {
+    width: 50px;
+  }
 }

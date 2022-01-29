@@ -31,6 +31,7 @@
                         <li><i class="far fa-envelope"></i> sussies@gmail.com</li>
                         <li><i class="fas fa-phone-square-alt"></i> 0150 - 593 00</li>
                     </ul>
+                    <!-- <button class="openbtn" onclick="openNav()">☰ Meny</button>  -->
                 </div>
             </div>
 
@@ -39,20 +40,24 @@
                     <div>
                         <img src="logos/rund.vit.png" class="sussie_logga">
                     </div>
-                    <ul>
+                    <button class="openbtn" onclick="openNav()">☰ Meny</button>
+                    <!-- Regular menu -->
+                    <ul class="nav-top">
                         <li><a class="nav-links" href="index.html">Hem</a></li>
                         <li><a class="nav-links" href="page2.html">Behandling & Priser</a></li>
                         <li><a class="nav-links" href="page3.html">Kontakt & Bokning</a></li>
                         <li><a class="nav-links" href="page4.html">Om Sussies</a></li>
                     </ul>
-
-                    <div class="burger_menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
                 </nav>
             </div>
+                    <!-- Toggle menu -->
+                    <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a class="nav-links" href="index.html">Hem</a>
+                            <a class="nav-links" href="page2.html">Behandling & Priser</a>
+                            <a class="nav-links" href="page3.html">Kontakt & Bokning</a>
+                            <a class="nav-links" href="page4.html">Om Sussies</a>
+                    </div>
         </header>
 
         <div class="bild_startsida">

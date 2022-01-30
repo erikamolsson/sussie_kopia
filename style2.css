@@ -130,16 +130,13 @@ nav ul li a:hover {
 }
 
 /* BURGER MENY */
-.burger_menu {
+#mySidepanel {
   display: none;
 }
-
-.burger_menu div {
-  width: 25px;
-  height: 5px;
-  margin: 5px;
-  background-color: #574c40;
+.openbtn {
+  display: none;
 }
+/* BURGER MENY END s*/
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_2 {
@@ -634,28 +631,66 @@ footer {
     height: 55px;
   }
 
-  /* Burger meny */
-  #meny nav ul {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 12vh;
-    background-color: #d6bb9f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
+  /* Burger meny start */
+  .nav-top {
+    display: none;
   }
 
-  #meny nav ul li {
-    border: none;
-    opacity: 0;
-  }
-
-  .burger_menu {
+  #mySidepanel {
     display: block;
   }
+
+  .sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 5;
+    right: 0;
+    background-color: #574c40;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidepanel a {
+    padding: 8px 32px 8px 8px;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel,
+  .closebtn {
+    position: absolute;
+    top: 5;
+    right: 9px;
+    font-size: 36px;
+  }
+
+  .openbtn {
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #58628a;
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 7px;
+  }
+
+  .openbtn:hover {
+    background-color: #574c40;
+  }
+
+  /* Burger meny end */
 
   .bild_sida_2 {
     background-size: 140%;

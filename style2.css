@@ -21,8 +21,6 @@
 
 header {
   grid-column: 1 / -1;
-  /* background-color: #D6BB9F; */
-  /* height: 130px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -98,10 +96,6 @@ div #information-top-of-header {
 nav ul {
   list-style-type: none;
   display: flex;
-  /* margin-right: 70px; */
-  /* align-items: center;
-    justify-content: flex-end; */
-  /* float: right; */
 }
 
 nav ul li {
@@ -140,7 +134,8 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_2 {
-  background: url(images/hair_cut.jpeg) center top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/hair_cut.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -260,6 +255,12 @@ nav ul li a:hover {
   width: 75%;
   border: none;
   border-radius: 4px;
+}
+
+.button_öppettider a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 /* PRODUKTER */
@@ -719,7 +720,14 @@ footer {
   }
 
   .sidebar_big {
-    grid-column: 3 / -3;
+    grid-column: 2 / -2;
+    margin-bottom: 50px;
+  }
+
+  .tabell_öppettider {
+    font-size: 17px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .bild_sax_först {
@@ -775,11 +783,12 @@ footer {
   .box4,
   .box1_5 {
     margin: auto;
+    text-align: center;
   }
 
   .box2 {
     margin: auto;
-    padding: 0 70px 0 0;
+    padding: 0 10px 0 0;
   }
 
   .box3 {

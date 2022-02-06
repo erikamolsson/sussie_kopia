@@ -137,7 +137,7 @@ nav ul li a:hover {
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/hair_cut.jpeg);
+    url(../images/hair_cut.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -201,6 +201,8 @@ nav ul li a:hover {
 .rubrik_klipp {
   font-family: "Quicksand", sans-serif;
   font-size: 27px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .text_klipp1 {
@@ -209,6 +211,7 @@ nav ul li a:hover {
   font-size: 19px;
   line-height: 1.5;
   text-align: justify;
+  padding-bottom: 20px;
 }
 
 .text_klipp2 {
@@ -226,9 +229,9 @@ nav ul li a:hover {
 .sidebar_öppettider {
   /* grid-column: 9 / -2; */
   background-color: #58628a;
-  padding: 0 10px 40px 10px;
+  padding: 40px 30px 40px 20px;
   height: fit-content;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 60px;
   text-align: center;
   display: flex;
@@ -239,13 +242,28 @@ nav ul li a:hover {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   color: #f7f4f2;
+  font-size: 30px;
   font-weight: bold;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .tabell_öppettider {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
+  margin: 0 auto;
+}
+
+table tr .day {
+  text-align: left;
+}
+table tr .open_time {
+  text-align: right;
+}
+table tr .dots {
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .button_öppettider {
@@ -327,6 +345,8 @@ nav ul li a:hover {
 .rubrik_färgning {
   font-family: "Quicksand", sans-serif;
   font-size: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .text_färg1 {
@@ -341,6 +361,8 @@ nav ul li a:hover {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .text_färg2 {
@@ -358,6 +380,7 @@ footer {
   grid-template-rows: auto;
   column-gap: 2.08%;
   background-color: #d6bb9f;
+  padding-top: 20px;
 }
 
 .box1 {
@@ -388,6 +411,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .adress {
@@ -408,6 +433,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .kontakt {
@@ -458,6 +485,7 @@ footer {
 .time {
   font-family: "Quicksand", sans-serif;
   color: #f2f2f2;
+  padding-left: 20px;
 }
 
 /* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
@@ -728,9 +756,14 @@ footer {
   }
 
   .tabell_öppettider {
-    font-size: 17px;
-    padding-right: 40px;
-    padding-left: 40px;
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .button_öppettider {
+    font-size: 26px;
+    width: 80%;
   }
 
   .bild_sax_först {
@@ -749,10 +782,18 @@ footer {
     display: none;
   }
 
+  .rubrik_öppettider {
+    font-size: 40px;
+  }
+
+  .rubrik_produkter {
+    font-size: 40px;
+  }
+
   .lanza_logga,
   .loreal_logga,
   .obh_logga {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
@@ -779,6 +820,10 @@ footer {
   .logga_footer_liten_skärm {
     align-items: center;
     margin: auto;
+  }
+  .box2 h3,
+  .box3 h3 {
+    font-size: 35px;
   }
 
   .box2,

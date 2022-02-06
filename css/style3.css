@@ -143,7 +143,7 @@ nav ul li a:hover {
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_sida_3 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(images/bilder_sussies_klipp.png) center top;
+    url(../images/bilder_sussies_klipp.png) center top;
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -194,6 +194,8 @@ nav ul li a:hover {
 .rubrik_kontakta_oss {
   font-family: "Quicksand", sans-serif;
   font-size: 27px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .text_kontakta_oss {
@@ -215,7 +217,7 @@ nav ul li a:hover {
 .sidebar_öppettider {
   /* grid-column: 9 / -2; */
   background-color: #58628a;
-  padding: 0 10px 40px 10px;
+  padding: 40px 30px 40px 20px;
   height: fit-content;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -227,14 +229,29 @@ nav ul li a:hover {
 .rubrik_öppettider {
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  font-size: 30px;
   color: #f7f4f2;
   font-weight: bold;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .tabell_öppettider {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
+  margin: 0 auto;
+}
+
+table tr .day {
+  text-align: left;
+}
+table tr .open_time {
+  text-align: right;
+}
+table tr .dots {
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .button_öppettider {
@@ -258,7 +275,7 @@ nav ul li a:hover {
 .sidebar_produkter {
   /* grid-column: 9 / -2; */
   background-color: #58628a;
-  padding: 10px;
+  padding: 40px 10px 10px 10px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -316,6 +333,8 @@ nav ul li a:hover {
 .rubrik_bokning {
   font-family: "Quicksand", sans-serif;
   font-size: 27px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .text_bokning {
@@ -338,12 +357,15 @@ nav ul li a:hover {
 .formulär {
   /* grid-column: 2 / 9; */
   padding: 20px 60px 30px 30px;
-  background-image: url(images/saxar.framsida.png);
+  background-image: url(../images/saxar.framsida.png);
+  margin-top: 20px;
 }
 
 .rubrik_formulär {
   font-family: "Quicksand", sans-serif;
-  font-size: 25px;
+  font-size: 27px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   color: #f7f4f2;
 }
 
@@ -427,6 +449,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .adress {
@@ -447,6 +471,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .kontakt {
@@ -497,6 +523,7 @@ footer {
 .time {
   font-family: "Quicksand", sans-serif;
   color: #f2f2f2;
+  padding-left: 20px;
 }
 
 /* START MED ANPASSNING FÖR MINDRE SKÄRMAR */
@@ -750,10 +777,11 @@ footer {
 
   .formulär {
     padding: 15px;
+    margin-bottom: 25px;
   }
 
   .rubrik_formulär {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .fnamn,
@@ -768,9 +796,22 @@ footer {
   }
 
   .tabell_öppettider {
-    font-size: 17px;
-    padding-right: 40px;
-    padding-left: 40px;
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .button_öppettider {
+    font-size: 26px;
+    width: 80%;
+  }
+
+  .rubrik_öppettider {
+    font-size: 40px;
+  }
+
+  .rubrik_produkter {
+    font-size: 40px;
   }
 
   .bild_sax_först {
@@ -792,7 +833,7 @@ footer {
   .lanza_logga,
   .loreal_logga,
   .obh_logga {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
@@ -813,8 +854,12 @@ footer {
   }
 
   .logga_footer_liten_skärm {
-    align-items: center;
     margin: auto;
+  }
+
+  .box2 h3,
+  .box3 h3 {
+    font-size: 35px;
   }
 
   .box2,

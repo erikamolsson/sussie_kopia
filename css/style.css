@@ -138,7 +138,7 @@ nav ul li a:hover {
 
 /* HÄR BÖRJAR STOR BILD & RUBRIK */
 .bild_startsida {
-  background: url(images/saxar.framsida.png) center top;
+  background: url(../images/saxar.framsida.png) center top;
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -159,7 +159,7 @@ nav ul li a:hover {
 /* HÄR BÖRJAR VÄLKOMSTDELEN */
 .välkomst_text {
   grid-column: 2 / 7;
-  padding: 50px 30px 50px 70px;
+  padding: 50px 30px 50px 50px;
 }
 
 .välkomst_text p {
@@ -171,18 +171,20 @@ nav ul li a:hover {
 
 .öppningstider {
   grid-column: 7 / -2;
-  padding: 40px 50px;
+  padding: 50px 20px 50px 60px;
   border-left: solid 2px black;
 }
 
 .öppningstider table {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  padding: 5px;
 }
 
 .öppningstider h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 30px;
+  padding-bottom: 20px;
 }
 
 /* HÄR BÖRJAR DEL OM TJÄNSTER */
@@ -198,6 +200,8 @@ nav ul li a:hover {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 35px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .ikoner_tjänster {
@@ -220,7 +224,8 @@ nav ul li a:hover {
   text-align: center;
   font-size: 35px;
   color: #f7f4f2;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* Här börgar slideshow - med foton */
@@ -345,6 +350,8 @@ div iframe {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 35px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* HÄR BÖRJAR FOOTER */
@@ -355,6 +362,7 @@ footer {
   grid-template-rows: auto;
   column-gap: 2.08%;
   background-color: #d6bb9f;
+  padding-top: 20px;
 }
 
 .box1 {
@@ -375,7 +383,7 @@ footer {
 /* Del om adress i footer */
 .box2 {
   grid-column: 5 / 8;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 50px;
   padding-top: 10px;
 }
@@ -384,6 +392,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .adress {
@@ -395,7 +405,7 @@ footer {
 /* Del om kontakt i footer */
 .box3 {
   grid-column: 8 / -2;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
   margin-left: 60px;
 }
@@ -404,6 +414,8 @@ footer {
   font-family: "Quicksand", sans-serif;
   color: #f7f4f2;
   font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .kontakt {
@@ -454,6 +466,7 @@ footer {
 .time {
   font-family: "Quicksand", sans-serif;
   color: #f2f2f2;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 1010px) {
@@ -687,7 +700,7 @@ footer {
     border-left: none;
     border-top: black solid 2px;
     padding: 0;
-    padding: 30px 50px;
+    padding: 30px 20px 30px 30px;
   }
 
   .ikoner_tjänster {
@@ -718,6 +731,11 @@ footer {
 
   .logga_footer_liten_skärm {
     margin: auto;
+  }
+
+  .box2 h3,
+  .box3 h3 {
+    font-size: 35px;
   }
 
   .box2,

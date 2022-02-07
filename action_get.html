@@ -4,9 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Action Get</title>
+    <title>Recieved emails.</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+      body {
+        background-color: #d6bb9f;
+        display: flex;
+      }
+
+      .box {
+        border: #f7f4f2 solid 5px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: #574c40;
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0 35px;
+      }
+
+      .rubrik_epost {
+        font-size: 35px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bolder;
+        margin: auto;
+        padding-top: 45px;
+        padding-bottom: 25px;
+        color: #f7f4f2;
+      }
+      .text_epost {
+        font-family: "Quicksand", sans-serif;
+        font-size: 27px;
+        font-weight: bolder;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #f7f4f2;
+      }
+      img {
+        margin: auto;
+        padding-bottom: 25px;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Vi har mottagit ditt meddelande och återkommer så fort vi kan!</h1>
+  <body class="layout_epost">
+    <div class="box">
+      <h1 class="rubrik_epost">Tack för ditt mejl!</h1>
+      <p class="text_epost">
+        Vi har mottagit ditt meddelande och återkommer med svar så fort vi kan.
+        <br /><br />
+        Varma Hälsningar,
+      </p>
+      <img
+        src="logos/rund.vit.png"
+        alt="Sussie logga"
+        class="logga"
+        width="250px"
+        height="200px"
+      />
+    </div>
   </body>
 </html>

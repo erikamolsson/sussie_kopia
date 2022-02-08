@@ -369,18 +369,9 @@ table tr .dots {
   color: #f7f4f2;
 }
 
-.fnamn {
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-  color: #f7f4f2;
-}
-
-.enamn {
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-  color: #f7f4f2;
-}
-
+.fnamn,
+.enamn,
+.email,
 .meddelande {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
